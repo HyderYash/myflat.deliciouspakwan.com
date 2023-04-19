@@ -11,6 +11,7 @@ import {
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { API_ROOT_PATH } from "../../utils/Common";
 
 const SignUp = () => {
   const [name, setName] = useState();
