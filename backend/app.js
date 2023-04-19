@@ -12,10 +12,9 @@ app.get("/", (req, res) => {
   res.send("API IS RUNNING");
 });
 
+app.use("/api", userRoutes);
 app.use(notFound);
 app.use(errorHandler);
-
-app.use("/api", userRoutes);
 
 app.listen(process.env.PORT, () => {
   console.log(`SERVER IS LISTENING ON http://localhost:${process.env.PORT}`);
