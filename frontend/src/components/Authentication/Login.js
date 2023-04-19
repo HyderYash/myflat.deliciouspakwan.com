@@ -42,7 +42,11 @@ const Login = () => {
         },
       };
 
-      const { data } = await axios.post("/login", { email, password }, config);
+      const { data } = await axios.post(
+        `${API_ROOT_PATH}/login`,
+        { email, password },
+        config
+      );
 
       toast({
         title: "Login Successful",

@@ -57,7 +57,7 @@ const SignUp = () => {
         },
       };
       const { data } = await axios.post(
-        "/register",
+        `${API_ROOT_PATH}/register`,
         { name, email, password },
         config
       );

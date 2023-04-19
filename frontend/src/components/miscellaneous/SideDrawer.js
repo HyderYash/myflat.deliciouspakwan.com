@@ -22,7 +22,6 @@ import {
 import { BellIcon, ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { ChatState } from "../../Context/ContextProvider";
 import { useHistory } from "react-router-dom";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
 const SideDrawer = () => {
