@@ -1,8 +1,8 @@
 let url = "";
 if (process.env.NODE_ENV === "production") {
-  url = "/.netlify/functions/app/api";
+  url = "https://myflat-deliciouspakwan-com-backend.onrender.com/api";
 } else {
-  url = "http://localhost:5000/.netlify/functions/app/api";
+  url = "http://localhost:5000/api";
 }
 export const API_ROOT_PATH = url;
 
