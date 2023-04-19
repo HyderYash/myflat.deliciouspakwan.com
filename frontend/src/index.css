@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.datatable {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .datatable td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+  }
+}
